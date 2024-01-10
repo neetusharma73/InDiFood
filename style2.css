@@ -1,0 +1,1003 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    display: grid;
+    gap: 0.5rem;
+    /* background-color: #f4f4f4; */
+}
+   /* .........Navbar Start.............. */
+
+   .nab{
+    display: flex;
+    padding-right: 2rem;
+    align-items: center;
+    gap: 4rem;
+    justify-items: center;
+}
+
+.NabBtn{
+    align-items: center;
+    justify-items: center;
+}
+.SignBtn:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.25);
+    background-color: #a7f3d0;
+    color: black;
+}
+.SignBtn{
+    width: 150px;
+    height: 40px;
+    /* color: #a7f3d0; */
+    cursor: pointer;
+    background-color: #a7f3d0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #212121;
+    font-weight: 600;
+    margin-top: .5rem;
+    transition: color 0.3s ease;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+}
+
+.navbar {
+    background-color:  #a7f3d0;
+    padding: 15px 20px;
+    margin: 0 0 0 1.58rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%;
+    border-radius: 4rem;
+    z-index: 1000;
+    margin-top: .5rem;
+    /* backdrop-filter: blur(25px); */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar-brand:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.25);
+    /* outline: 3rem; */
+    /* background-color: aqua;
+    border-radius: 2rem;
+    width: 8rem;
+    height: 100%; */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #212121;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* ...........Dropdown Start.............   */
+
+/* Style the dropdown content (hidden by default) */
+/* .dropdown {
+    float: left;
+    overflow: hidden;
+} */
+
+.dropdown .dropbtn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    color: black;
+    padding: 0;
+    background-color: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 15px;
+}
+.dropbtn:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.25);
+
+
+}
+.navbar a, .dropdown-content a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a7f3d0;
+    min-width: 2rem;
+    border-radius: 0 0 20% 20%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: #a7f3d0;
+    border-radius: 20% 20% 20% 20%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ /* ...........Dropdown End.............   */
+
+.navbar-menu li:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.25);
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+
+    .navbar-menu {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        
+    }
+}
+
+/* .nab{
+    display: flex;
+    padding-right: 2rem;
+    align-items: center;
+    gap: 4rem;
+    position:sticky;
+    position: -webkit-sticky;
+    justify-items: center;
+}
+
+.NabBtn{
+    align-items: center;
+    justify-items: center;
+}
+
+/* .SignBtn:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.25);
+    background-color: #a7f3d0;
+    color: black;
+} */
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.SignBtn{
+    width: 150px;
+    height: 40px;
+    color: #a7f3d0;
+    padding: 0;
+    cursor: pointer;
+    background-color: a7f3d0;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #212121;
+    font-weight: 600;
+    margin-top: .5rem;
+    transition: color 0.3s ease;
+    border: 0;
+    outline: 0;
+    animation: zoomIn 2s infinite;
+    animation: zoomOut 2s infinite;
+    border-radius: 20px;
+}
+
+.navbar {
+    background-color:  #a7f3d0;
+    padding: 15px 20px;
+    margin: 0 0 0 1.58rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 80%;
+    border-radius: 4rem;
+    z-index: 1000;
+    margin-top: .5rem;
+    /* backdrop-filter: blur(25px); */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+    animation: bounce 5s infinite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar-brand:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.25);
+    /* outline: 3rem; */
+    /* background-color: aqua;
+    border-radius: 2rem;
+    width: 8rem;
+    height: 100%; */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #212121;
+    font-weight: bold;
+    /* transition: color 0.3s ease; */
+}
+
+/* ...........Dropdown Start.............   */
+
+/* Style the dropdown content (hidden by default) */
+/* .dropdown {
+    float: left;
+    overflow: hidden;
+} */
+
+.dropdown .dropbtn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    border: none;
+    font-weight: bold;
+    outline: none;
+    color: black;
+    padding: 0;
+    background-color: inherit;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 15px;
+}
+.dropbtn:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.25);
+
+
+}
+.navbar a, .dropdown-content a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a7f3d0;
+    min-width: 2rem;
+    border-radius: 0 0 20% 20%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: #a7f3d0;
+    border-radius: 20% 20% 20% 20%;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ /* ...........Dropdown End.............   */
+
+.navbar-menu li:hover{
+    transition: all .4s ease-in-out;
+    transform: scale(1.25);
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        /* align-items: flex-start; */
+    }
+
+    .navbar-menu {
+        margin-top: 15px;
+        gap: 10px;
+    }
+
+    .navbar-menu li {
+        margin: 10px 0;
+        
+    }
+} */
+
+    /* .........Navbar End.............. */
+
+    /* .........Carousel Start.............. */
+
+.carousel-container {
+    /* padding-top: 6rem; */
+    width: 95%;
+    height: 90vh;
+    margin: auto;
+    overflow: hidden;
+    scroll-behavior: 0;
+    border-radius: 20px;
+    /* animation: drop 4s forwards; */
+}
+@keyframes drop {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+.carousel-wrapper {
+    display: flex;
+    /* transition: transform 0.5s ease-in-out; */
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+@media (max-width:900px) {
+    .carousel-container{
+        height: 50vh;
+    }
+    .carousel-nav{
+        margin-top: 0;
+    }
+}
+.t2{
+    position: absolute;
+    top: 40%;
+    left: 150%;
+    color: #a7f3d0;
+    font-family: 'Brush Script MT', cursive  ; 
+    font-size: 5rem;
+    font-weight: bold;
+  }
+.text-overlay {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    /* transform: translate(-50%, -50%); */
+    color: #020b07;
+    text-align: center;
+    font-family: 'Brush Script MT', cursive  ; 
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    /* transition: transform 0.5s ease-in-out; */
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 20px;
+    /* filter: blur(3px); */
+    height: 100vh;
+    /* display: block; */
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background-color: #333;
+}
+
+    /* .........Carousel End.............. */
+
+    /* .........About Start.............. */
+
+.Mainsec{
+    width: 95%;
+    height: 100vh;
+    margin: 1rem;
+    /* background-color: #a7f3d0; */
+    display: flex;
+    animation: slideInFromright 4s forwards;
+}
+
+.sec1{
+    /* background-color: #a7f3d0; */
+    /* background-image: url("D:\\Code Workspaces\\HTML workspace\\html_training\\Dice\\pexels-anna-tukhfatullina-food-photographerstylist-2664443.jpg"); */
+    width: 50%;
+    height: 100%; 
+    border-radius: 2rem 0 0 2rem;
+}
+.aboutpic:hover{
+    transition: all .4s ease-in-out;
+    margin: 0 3rem 2rem 1.5rem;
+    border-radius: 50% 0 0 50%;
+
+}
+.aboutpic{
+    width :100%;
+    height: 100vh;
+    margin: 0 3rem 2rem 1.5rem;
+    border-radius: 50% 0 0 50%;
+}
+@media (max-width:900px){
+    .sec1,.sec2,.Mainsec{
+        height: 60vh;
+    }
+    .aboutpic{
+        height: 60vh;
+    }
+    .aboutus{
+        font-size: 3rem;
+    }
+    .aboutxt{
+        text-overflow: ellipsis;
+        overflow: scroll;
+        overflow-y: scroll;
+    }
+}
+@media (max-width:700px){
+    .sec1,.sec2,.Mainsec{
+        height: 40vh;
+    }
+    .aboutpic{
+        height: 40vh;
+    }
+    .aboutus{
+        font-size: 20px;
+    }
+    .aboutxt{
+        text-overflow: ellipsis;
+        overflow: scroll;
+        overflow-y: scroll;
+    }
+}
+.sec2{
+    background-color: #a7f3d0;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;                                                    
+    border-radius: 0 20% 20% 0;
+    /* border: .5rem transparent aquamarine; */
+}
+.aboutxt{
+    margin: 1rem 2rem 1rem 2rem;
+    text-indent: 3rem;
+    font-family: cursive;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+.aboutus{
+    margin: 1rem 0 1rem 2rem;
+    font-size: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aboutbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: black;
+    margin-top: 1rem;
+    font-weight: bold;
+    border-radius: 4rem;
+    cursor: pointer;
+    background-color: inherit;
+    transition: all .5s ease-out;
+}
+.aboutbtn:hover{
+  background-color: #6ca68b;
+}
+@keyframes slideRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideDown {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+
+    /* .........About Start.............. */
+
+    /* .........itemdiv.................. */
+.itemdiv{
+    width: 98%;
+    height: 100vh;
+    margin: 1rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    border-radius: 10px; 
+}
+.h12,.h13{
+    font-size: 4rem;
+    color: wheat;
+}
+.h13{
+    margin-top: 4rem;
+}
+.item1,.item2{
+    display: flex;
+    margin: 1px;
+    width: 100%;
+    height: 75vh;
+    background-color: transparent;
+}
+.card1{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    background-color: transparent;
+    width: fit-content;
+    height: 80vh;
+    /* animation: bounce 2s infinite; */
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+.card,.cardo {
+    width: 30%;
+    height: 70%;
+    position: relative;
+    background-color: #a7f3d0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  .card{
+    animation: bounce 3s infinite;
+    /* animation: reverse; */
+  }
+  .cardo{
+    top:8rem;
+    animation: bounce 2s infinite;
+  }
+
+  .card:hover,.cardo:hover {
+    transform: scale(1.05);
+  }
+
+  .card img,.cardo img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card-content {
+    padding: 0 10px .5rem 10px;
+  }
+
+  .hr{
+    color: red;
+    background-color: aqua;
+    margin: 0 0 2px 0;
+  }
+  .card-content h2 {
+    margin-top: 0;
+    color: #020b07;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .card-content p {
+    color: #555;
+    height: 5rem;
+    font-family: cursive;
+  }
+  @media (max-width: 600px) {
+    .card,.cardo {
+      max-width: 100%;
+    }
+}  
+    /* .........itemdiv.................. */
+
+    /* ...............map Start................ */
+
+    .mapfeed{
+        width: 100%;
+        background-color: transparent;
+        height: 100vh;
+        display: flex;
+        /* backdrop-filter: blur(4rem); */
+        /* margin-top: 40rem; */
+    }
+    .mapdiv,.feedback{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        background-color: transparent;
+        margin: 2rem;
+        border-radius: 8px;
+        width: 50%;
+        backdrop-filter: blur(4rem);
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        /* gap: 2rem; */
+    }
+    .feedback{
+        animation: slideInFromright 8s forwards;
+    }
+    @keyframes slideInFromright {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+    .mapdiv{
+        animation-delay: 4ms;
+        animation: slideInFromLeft 10s forwards;
+    }
+    @keyframes slideInFromLeft {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+
+    .mpcontainer {
+        background-color: #a7f3d0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #map {
+        width: 100%;
+        height: 60%;
+        margin-bottom: 12px;
+        background: url('https://via.placeholder.com/400x200.png?text=Map+Image');
+        background-size: cover;
+        position: relative;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #map a img{
+        /* margin: 5rem; */
+        width: 100%;
+        height: 50vh;
+    }
+    /* #addressLabel {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        color: #333;
+    } */
+
+    .contact-info {
+        text-align: left;
+    }
+
+    .contact-info label {
+        display: block;
+        margin-top: 10px;
+        font-size: larger;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+    }
+    .contact-info a{
+        display: block;
+        margin-top: 10px;
+        font-size: larger;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+    }
+
+    form {
+        background-color: #a7f3d0;
+        padding: 20px;
+        border-radius: 8px;
+        height: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+    form h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    label {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        font-size: larger;
+        margin-bottom: 8px;
+    }
+
+    input, select, textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="radio"], input[type="checkbox"] {
+        margin-right: 6px;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    form button {
+        /* background-color: #4caf50; */
+        color: #fff;
+        padding: 5px;
+        margin-left: 42%;
+        width: 6rem;
+        border: 1px solid black;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: larger;
+    }
+
+    form button:hover {
+        background-color: #45a049;
+    }
+
+    /* ...............map End................ */
+
+    /* Basic styling for the footer */
+footer {
+    background-color: #fefdfc; /* Background color */
+    color: rgb(2, 0, 0); /* Text color */
+    border-radius: 2rem 2rem 0 0;
+    padding: 20px; /* Spacing inside the footer */
+  }
+  
+  .footer-content {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+  
+  .newsletter {
+    height: 14vh;
+    width: 50%;
+    /* margin-bottom: 50px; Spacing below newsletter */
+  }
+  
+  .newsletter h1 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2.2rem; /* Adjust heading font size */
+    margin-bottom: 10px; /* Spacing below heading */
+  }
+  
+  .formfoot {
+    width: 80%;
+    height: 50%;
+    display:flex; 
+    /* Use flexbox for form elements */
+    /* border-color: black; */
+    
+  }
+  
+  .emailfoot{
+    width: 60%;
+    height: 100%;
+    border-radius: 4rem;
+    font-size: 1rem;
+    text-indent: 10px;
+    /* padding: 3rem; */
+    /* background-color: red; */
+    /* width: 8rem;
+    padding: 10px; /* Adjust input padding */
+    /* margin:; Spacing between input and button */ 
+  }
+  
+  .buttonfoot{
+    width: 30%;
+    margin-left: 10px;
+    border-radius: 3rem;
+    background-color: #a7f3d0;
+    font-size: 1.2rem;
+    border: 0;
+    color: #020b07;
+    /* padding: 8px 15px; Adjust button padding */
+    /* background-color: #fff; Button background color */
+    /* color: #333; Button text color */
+    /* border: none; Remove button border */
+  }
+  .buttonfoot:hover{
+      cursor: pointer;
+  }
+  
+  .footer-links {
+    margin-top: 1rem;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space columns evenly */
+    width: 100%; /* Take full width */
+  }
+  
+  .column {
+    color: black;
+    margin-right: 20px;
+    max-width: 200px;
+    flex: 1; /* Limiting the width of each column */
+  }
+  
+  .footer-links h3 {
+    color: black  ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem; /* Adjust heading font size */
+    margin-bottom: 10px; /* Spacing below heading */
+  }
+  
+  .footer-links a {
+    margin-top: 10px;
+    font-size: larger;
+    color: rgb(11, 1, 1); /* Link color */
+    margin-bottom: 5px; /* Spacing between links */
+    display: block; /* Make links block-level */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  /* Style for social media icons */
+  .column a i {
+    margin-right: 5px; /* Spacing between icon and text */
+  }
+  
+  /* Style for copyright */
+  .copyright {
+    margin-top: 10px; /* Push to the bottom */
+    border: 5px solid #4a90e2; /* Border */
+    border-radius: 10px; /* Border radius */
+    padding: 10px; /* Padding inside the box */
+    text-align: center; /* Center align text */
+  }
+ 
