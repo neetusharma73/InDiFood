@@ -575,13 +575,14 @@ body {
     color: black;
     margin-top: 1rem;
     font-weight: bold;
-    border-radius: 4    rem;
+    border-radius: 4rem;
     cursor: pointer;
     background-color: inherit;
     transition: all .5s ease-out;
-    animation: slideRight 10s infinite;
 }
-
+.aboutbtn:hover{
+  background-color: #6ca68b;
+}
 @keyframes slideRight {
     from {
       transform: translateX(100%);
